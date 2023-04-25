@@ -1,0 +1,8 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Show - Users{% endblock %}
+{% block content %}
+    <h1>Welcome {{ user.firstname }}</h1>
+    <p>This your profile page</p>
+    {{ user.firstname }} / {{ user.lastname }} / {{ user.email }}
+{% endblock %}

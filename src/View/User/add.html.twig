@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Add - Users{% endblock %}
+{% block content %}
+    <h1>Add user</h1>
+
+    <form method="post">
+        <div>
+            <label for="firstname">Firstname :</label><br>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+        <div>
+            <label for="lastname">Lastname :</label><br>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        <div>
+            <label for="lastname">Email :</label><br>
+            <input type="email" name="ff_email" id="u_email">
+        </div>
+        <div>
+            <label for="ff_password">Password :</label><br>
+            <input type="password" name="ff_password" id="ff_password">
+        </div><br>
+
+        <button>Submit</button>
+    </form>
+
+{% endblock %}
