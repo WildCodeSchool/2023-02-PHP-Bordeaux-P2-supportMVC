@@ -1,0 +1,20 @@
+{# TODO : manage errors display #}
+
+<form method="post">
+    <input type="hidden" value="{{ support_user.id }}" name="id">
+
+    <label for="lastname">Lastname</label>
+    <input type="text" value="{{ user.lastname }}" name="lastname" ><br><br>
+
+    <label for="firstname">Firstname</label>
+    <input type="text" value="{{ user.firstname }}" name="firstname" ><br><br>
+
+    <label for="email">Email</label>
+    <input type="email" value="{{ user.email }}" name="email" ><br><br>
+
+    <label for="birthdate">birthdate</label>
+    <input type="date" value="{{ user.birth_date }}" name="birthdate"><br><br>
+
+    <button>Submit</button>
+    <br><br>
+</form>
