@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Edit Userr{% endblock %}
+{% block content %}
+
+    <h2>MODIFY YOUR INFORMATION</h2>
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="{{ user.id }}">
+            <div>
+                <label for="p2_firstname">Firstname</label><br>
+                <input type="text" id="p2_firstname" name="p2_firstname" value="{{ user.p2_firstname }}"><br><br>
+            </div>
+            <div>
+                <label for="p2_lastname">Lastname</label><br>
+                <input type="text" id="p2_lastname" name="p2_lastname" value="{{ user.p2_lastname }}"><br><br>
+            </div>
+            <div>
+                <label for="p2_email">Email</label><br>
+                <input type="email" id="p2_email" name="p2_email" value="{{ user.p2_email }}"><br><br>
+            </div>
+            <div>
+                <label for="p2_password">Password</label><br>
+                <input type="password" id="p2_password" name="p2_password" value="{{ user.p2_password }}"><br><br>
+            </div>
+            <div>
+                <label for="p2_birthday">Date of birth</label><br>
+                <input type="date" id="p2_birthday" name="p2_birthday" value="{{ user.p2_birthday }}"><br><br>
+            </div>
+            {# <div>
+                    <label for="userPicture">Upload a Picture</label><br>
+                    <input type="file" name="userPicture" id="userPicture"><br>
+                    <p> {{errors.userPictureMissing}} </p>
+                    <p> {{errors.userPictureExtension}} </p>
+                    <p> {{errors.userPictureSize}} </p>
+                    <p> {{errors.userPictureError}} </p>
+                </div> #}
+            <div>
+                <button type="submit">Modify</button><br><br>
+            </div>
+        </form>
+        <a href="/users">Back to list</a>
+    </div>
+
+{% endblock %}
